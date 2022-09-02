@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Frontend Mentor Challenge, September 2022">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <div class="storage-component">
+
+    <header class="header">
+      <img class="logo" src="./images/logo.svg" alt="Fylo logo">
+      <div class="links">
+        <a href="#">
+          <img src="./images/icon-document.svg" alt="document button" aria-label="document button">
+        </a>
+        <a href="#">
+          <img src="./images/icon-folder.svg" alt="folder button" aria-label="folder button"></a>
+        <a href="#">
+          <img src="./images/icon-upload.svg" alt="upload button" aria-label="upload button"></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="used">
+        <p class="text">You’ve used
+          <span class="bold">
+            <span id="used"></span> GB
+          </span> of your storage
+        </p>
+        <progress class="progress-bar" name="used" id="used-slider" max="1000"></progress>
+        <div class="label-wrapper">
+          <div id="dot" class="dot"></div>
+          <label for="used">0 GB</label>
+          <label for="used">1000 GB</label>
+        </div>
+      </div>
+
+      <div class="left">
+        <p id="left" class="left-digits"></p>
+        <p class="description">GB Left</p>
+      </div>
+    </main>
+
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/PavlinaPs">Pavlina Psarsky</a>.
+  </footer>
+</body>
+
+</html>
