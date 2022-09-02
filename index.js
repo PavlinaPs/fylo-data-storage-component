@@ -3,22 +3,19 @@ let used = 815;
 let left = availableStorage - used;
 
 // slider value
-let usedSlider = document.getElementById("used-slider");
+const usedSlider = document.getElementById("used-slider");
 usedSlider.setAttribute("value", used);
 
-// slider dot, calculated % minus approx 6% dot width to fit the bar
-let dotPosition;
-
-if (window.innerWidth < 600) {
-  dotPosition = (used / availableStorage) * 100 - 6;
+// slider dot position
+const dot = document.getElementById("dot");
+let usedPercentage = (used / availableStorage) * 100;
+if (usedPercentage < 10) {
+  dot.setAttribute("style", "display: none");
+} else if (usedPercentage >= 10 && usedPercentage < 30) {
+  dot.setAttribute("style", `left: calc(${usedPercentage}% - 10px)`);
+} else {
+  dot.setAttribute("style", `left: calc(${usedPercentage}% - 15px)`);
 }
-
-if (window.innerWidth >= 600) {
-  dotPosition = (used / availableStorage) * 100 - 3;
-}
-
-let dot = document.getElementById("dot");
-dot.style.left = dotPosition + "%";
 
 // populate used
 const usedDisplay = document.getElementById("used");

@@ -86,6 +86,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Custom styling progress bar in CSS](https://stackoverflow.com/questions/42290719/custom-styling-progress-bar-in-css)
 - [The HTML5 progress Element](https://css-tricks.com/html5-progress-element/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 - [20 Amazing CSS Progress](https://alvarotrigo.com/blog/progress-bar-css/)
+- [CSS Progress Bar Tutorial](https://youtu.be/basf1lH1H-E) - by WDS, Kyle's another great tutorial
 
 ## Author
 
