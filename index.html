@@ -36,6 +36,7 @@
     </header>
 
     <main>
+      <h1 aria-label="Fylo data storage usage overview"></h1>
       <div class="used">
         <p class="text">You’ve used
           <span class="bold">
@@ -43,12 +44,12 @@
           </span> of your storage
         </p>
         <div class="progress-wrapper">
-          <progress class="progress-bar" name="used" id="used-slider" max="1000"></progress>
+          <progress class="progress-bar" id="used-slider" max="1000"></progress>
           <div id="dot" class="dot"></div>
         </div>
         <div class="label-wrapper">
-          <label for="used">0 GB</label>
-          <label for="used">1000 GB</label>
+          <label for="used-slider">0 GB</label>
+          <label for="used-slider">1000 GB</label>
         </div>
       </div>
 
@@ -60,10 +61,10 @@
 
   </div>
 
-  <!-- <footer class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/PavlinaPs">Pavlina Psarsky</a>.
-  </footer> -->
+  </footer>
 </body>
 
 </html>

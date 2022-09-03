@@ -70,9 +70,6 @@ I enjoyed it very much.
 
   The value attribute is supplied by JavaScript.
   With the help of an old CSS Tricks article "The HTML5 progress Element" I was able to style it up.
-  This is how the default progress bar looks like:
-  <progress></progress>
-  And styled:
   | Styled progress element in browsers |
   | :------------: |
   ![Styled progress element in browsers](./screenshots/progress-bar-mobile-browsers.jpg)
